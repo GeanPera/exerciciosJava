@@ -26,6 +26,15 @@ public class exercice01 {
 			
 			if (diaPesquisa >= 1 && diaPesquisa <= 30) {
 				System.out.println("A temp. desse dia é de " + temperaturas[diaPesquisa-1]);
+				
+				if (media > temperaturas[diaPesquisa-1]) {
+					System.out.println("E está abaixo da média que é " + media);
+				} else if (media < temperaturas[diaPesquisa-1]) {
+					System.out.println("E está acima da média que é " + media);
+				} else {
+					System.out.println("É igual a média");
+				}
+				
 				System.out.println("");
 			} else {
 				System.out.println("Informe um dia maior que -1 e menor que 31");
